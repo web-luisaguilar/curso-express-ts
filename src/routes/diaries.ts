@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
   try {
     const { date, weather, visibility, comment } = req.body
 
-    const newDiaryEntry = toNewDiaryEntry(req.boy)
+    const newDiaryEntry = toNewDiaryEntry
 
     const addedDiaryEntry = diaryServices.addDiary({
       date,
